@@ -13,10 +13,10 @@ class getMovieNames():
 
 	def downloadNames(self):
 		'''Selects a movie''' 
-		driver = self.driver
-		driver.get("https://www.imdb.com/list/ls005578473/")
-		getTitles = driver.find_elements_by_tag_name("h3")
-		getClues = driver.find_elements_by_xpath("//div[@class='lister-item-content']/p[@class='']")
+		
+		self.driver.get("https://www.imdb.com/list/ls005578473/")
+		getTitles = self.driver.find_elements_by_tag_name("h3")
+		getClues = self.driver.find_elements_by_xpath("//div[@class='lister-item-content']/p[@class='']")
 
 		titles = [x.text for x in getTitles]
 		clue = [x.text for x in getClues]
