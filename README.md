@@ -1,2 +1,2 @@
-# Project-boost
-Udemy course
+# Project-guess game
+Guess movie names
